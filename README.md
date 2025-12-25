@@ -1,10 +1,95 @@
-# Welcome!
+# tiffehr.github.io
 
-## `tiffehr.com` is in progress, but don't expect changes anytime soon
+Personal website of Tiff Fehr, built with SvelteKit as a static site.
 
-This is the online presence of Tiff Fehr, a data journalist and coder at The New York Times, within [the Interactive News desk](https://github.com/newsdev/about-int).
+## Development
 
+Install dependencies:
 
-The majority of my professional work can be seen on [my NYT author page](https://www.nytimes.com/by/tiff-fehr). Most other online accounts for me are now private or suspended, but I may give <a rel="me" href="https://journa.host/@tiffehr">Mastodon</a> a try.
+```bash
+npm install
+```
 
-If you are interested in my career and work, please reach out over email: this domain name on gmail.
+Start the development server:
+
+```bash
+npm run dev
+```
+
+## Building
+
+Build the static site:
+
+```bash
+npm run build
+```
+
+Preview the built site:
+
+```bash
+npm run preview
+```
+
+## Deployment
+
+Deploy to GitHub Pages:
+
+```bash
+npm run deploy
+```
+
+## Testing
+
+Run tests:
+
+```bash
+npm test
+```
+
+Run tests in watch mode:
+
+```bash
+npm run test:watch
+```
+
+Run tests with UI:
+
+```bash
+npm run test:ui
+```
+
+## Code Quality
+
+Format code:
+
+```bash
+npm run format
+```
+
+Lint code:
+
+```bash
+npm run lint
+```
+
+Type check:
+
+```bash
+npm run check
+```
+
+## Project Structure
+
+- `src/` - Source code
+  - `routes/` - SvelteKit routes (file-based routing)
+  - `lib/` - Reusable components and utilities
+  - `app.html` - HTML template
+  - `app.scss` - Global styles
+  - `theme.scss` - Theme variables and base styles
+- `static/` - Static assets
+- `storage/` - Legacy content (preserved from previous site)
+- `build/` - Built site (generated)
+
+## License
+
+Content and code by Tiff Fehr.

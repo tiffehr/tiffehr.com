@@ -1,9 +1,0 @@
-.DS_Store
-node_modules/*
-!node_modules/nytg-dataloader
-node_modules/nytg-dataloader/node_modules
-!node_modules/nytg-styles
-/holiday
-/stories
-/travel
-/unlearning
