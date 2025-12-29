@@ -1,10 +1,10 @@
 import { PUBLIC_BASE_URL } from "$env/static/public";
-import { resolve } from "$app/paths";
+// import { resolve } from "$app/paths";
 export const prerender = true;
 
 export const GET = async () => {
   const baseUrl = PUBLIC_BASE_URL || "https://www.tiffehr.com";
-  const routes = [resolve("/")];
+  const routes = ["/"];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset
@@ -14,15 +14,15 @@ export const GET = async () => {
   data-google-analytics-opt-out="true"
 >
   ${routes
-    .map(
-      (route) => `<url>
+      .map(
+        (route) => `<url>
     <loc>${baseUrl}${route}</loc>
     <lastmod>${new Date().toISOString()}</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>`
-    )
-    .join("")}
+      )
+      .join("")}
 </urlset>`;
 
   return new Response(sitemap, {
