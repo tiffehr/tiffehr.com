@@ -1,0 +1,1813 @@
+
+# robots.txt for https://www.tiffehr.com
+# This content is made available for your personal, non-commercial
+# use only. You may not copy, reproduce, republish, upload, post, transmit,
+# or distribute in any way any material from this site for commercial use 
+# without prior written permission from Tiff Fehr
+
+User-agent: AddSearchBot
+User-agent: AI2Bot
+User-agent: Ai2Bot-Dolma
+User-agent: aiHitBot
+User-agent: Amazonbot
+User-agent: Andibot
+User-agent: anthropic-ai
+User-agent: Applebot
+User-agent: Applebot-Extended
+User-agent: Awario
+User-agent: bedrockbot
+User-agent: bigsur.ai
+User-agent: Brightbot 1.0
+User-agent: Bytespider
+User-agent: CCBot
+User-agent: ChatGPT Agent
+User-agent: ChatGPT-User
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: Claude-Web
+User-agent: ClaudeBot
+User-agent: CloudVertexBot
+User-agent: cohere-ai
+User-agent: cohere-training-data-crawler
+User-agent: Cotoyogi
+User-agent: Crawlspace
+User-agent: Datenbank Crawler
+User-agent: Devin
+User-agent: Diffbot
+User-agent: DuckAssistBot
+User-agent: Echobot Bot
+User-agent: EchoboxBot
+User-agent: FacebookBot
+User-agent: facebookexternalhit
+User-agent: Factset_spyderbot
+User-agent: FirecrawlAgent
+User-agent: FriendlyCrawler
+User-agent: Gemini-Deep-Research
+User-agent: Google-CloudVertexBot
+User-agent: Google-Extended
+User-agent: Google-Firebase
+User-agent: GoogleAgent-Mariner
+User-agent: GoogleOther
+User-agent: GoogleOther-Image
+User-agent: GoogleOther-Video
+User-agent: GPTBot
+User-agent: iaskspider/2.0
+User-agent: ICC-Crawler
+User-agent: ImagesiftBot
+User-agent: img2dataset
+User-agent: ISSCyberRiskCrawler
+User-agent: Kangaroo Bot
+User-agent: LinerBot
+User-agent: meta-externalagent
+User-agent: Meta-ExternalAgent
+User-agent: meta-externalfetcher
+User-agent: Meta-ExternalFetcher
+User-agent: MistralAI-User
+User-agent: MistralAI-User/1.0
+User-agent: MyCentralAIScraperBot
+User-agent: netEstate Imprint Crawler
+User-agent: NovaAct
+User-agent: OAI-SearchBot
+User-agent: omgili
+User-agent: omgilibot
+User-agent: OpenAI
+User-agent: Operator
+User-agent: PanguBot
+User-agent: Panscient
+User-agent: panscient.com
+User-agent: Perplexity-User
+User-agent: PerplexityBot
+User-agent: PetalBot
+User-agent: PhindBot
+User-agent: Poseidon Research Crawler
+User-agent: QualifiedBot
+User-agent: QuillBot
+User-agent: quillbot.com
+User-agent: SBIntuitionsBot
+User-agent: Scrapy
+User-agent: SemrushBot-OCOB
+User-agent: SemrushBot-SWA
+User-agent: ShapBot
+User-agent: Sidetrade indexer bot
+User-agent: Thinkbot
+User-agent: TikTokSpider
+User-agent: Timpibot
+User-agent: VelenPublicWebCrawler
+User-agent: WARDBot
+User-agent: Webzio-Extended
+User-agent: wpbot
+User-agent: YaK
+User-agent: YandexAdditional
+User-agent: YandexAdditionalBot
+User-agent: YouBot
+Disallow: /
+
+# Scraper
+# https://darkvisitors.com/agents/008
+
+User-agent: 008
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/a360-search
+
+User-agent: A360-Search
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/aa
+
+User-agent: aa
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/activecomply
+
+User-agent: ActiveComply
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/adagiobot
+
+User-agent: Adagiobot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/adbeat-bot
+
+User-agent: adbeat_bot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/adidxbot
+
+User-agent: adidxbot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/adkerneltopiccrawler
+
+User-agent: AdkernelTopicCrawler
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/admantx
+
+User-agent: admantx
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/adsbot-google
+
+User-agent: AdsBot-Google
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/adsbot-google-mobile
+
+User-agent: AdsBot-Google-Mobile
+Disallow: /
+
+# Scraper
+# https://darkvisitors.com/agents/adstxtcrawler
+
+User-agent: AdsTxtCrawler
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/ahrefs-site-audit
+
+User-agent: Ahrefs Site Audit
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/ahrefsbot
+
+User-agent: AhrefsBot
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/ahrefssiteaudit
+
+User-agent: AhrefsSiteAudit
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/ai2bot-dolma
+
+User-agent: Ai2Bot-Dolma
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/aihitbot
+
+User-agent: aiHitBot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/amazon-adbot
+
+User-agent: Amazon AdBot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/amazonadbot
+
+User-agent: AmazonAdBot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/amazonproductdiscovery
+
+User-agent: AmazonProductDiscovery
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/anderspinkbot
+
+User-agent: AndersPinkBot
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/applebot-extended
+
+User-agent: Applebot-Extended
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/archivebot
+
+User-agent: ArchiveBot
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/attracta
+
+User-agent: Attracta
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/audigentadbot
+
+User-agent: AudigentAdBot
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/audisto-crawler
+
+User-agent: Audisto Crawler
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/automattic-analytics-crawler
+
+User-agent: Automattic Analytics Crawler
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/awario
+
+User-agent: Awario
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/awariobot
+
+User-agent: AwarioBot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/awariosmartbot
+
+User-agent: AwarioSmartBot
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/barkrowler
+
+User-agent: Barkrowler
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/bigupdatabot
+
+User-agent: BigUpDataBot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/bing-ads
+
+User-agent: Bing Ads
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/bitsightbot
+
+User-agent: BitSightBot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/blackboard
+
+User-agent: Blackboard
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/blexbot
+
+User-agent: BLEXBot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/bomborabot
+
+User-agent: BomboraBot
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/botify
+
+User-agent: botify
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/brandverity
+
+User-agent: BrandVerity
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/brightedge-bot
+
+User-agent: BrightEdge Bot
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/brightedge-crawler
+
+User-agent: BrightEdge Crawler
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/buck
+
+User-agent: Buck
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/bytespider
+
+User-agent: Bytespider
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/caliberbot
+
+User-agent: CaliberBot
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/caliperbot
+
+User-agent: Caliperbot
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/ccbot
+
+User-agent: CCBot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/channable
+
+User-agent: channable
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/chatglm-spider
+
+User-agent: ChatGLM-Spider
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/checkmarknetwork
+
+User-agent: CheckMarkNetwork
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/cincraw
+
+User-agent: Cincraw
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/claritybot
+
+User-agent: ClarityBot
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/claudebot
+
+User-agent: ClaudeBot
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/clearscopebot
+
+User-agent: Clearscopebot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/clickagy-intelligence-bot
+
+User-agent: Clickagy Intelligence Bot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/clickagy-intelligence-bot-v2
+
+User-agent: Clickagy Intelligence Bot v2
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/cloudflare-custom-hostname-verification
+
+User-agent: Cloudflare Custom Hostname Verification
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/cloudflare-stream-webhook
+
+User-agent: Cloudflare Stream Webhook
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/cloudflare-healthchecks
+
+User-agent: Cloudflare-Healthchecks
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/cloudflare-prefetch
+
+User-agent: CloudFlare-Prefetch
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/cloudflare-ssldetector
+
+User-agent: Cloudflare-SSLDetector
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/cloudflare-traffic-manager
+
+User-agent: Cloudflare-Traffic-Manager
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/cloudtrellis
+
+User-agent: Cloudtrellis
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/cloudvertexbot
+
+User-agent: CloudVertexBot
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/cludo-com
+
+User-agent: cludo.com
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/cocolyzebot
+
+User-agent: Cocolyzebot
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/cognitiveseo-crawler
+
+User-agent: cognitiveSEO Crawler
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/cohere-training-data-crawler
+
+User-agent: cohere-training-data-crawler
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/contentking
+
+User-agent: contentking
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/contextualbot
+
+User-agent: ContextualBot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/contxbot
+
+User-agent: contxbot
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/convermax
+
+User-agent: Convermax
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/cotoyogi
+
+User-agent: Cotoyogi
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/criteobot
+
+User-agent: CriteoBot
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/cxense
+
+User-agent: Cxense
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/cxensebot
+
+User-agent: cXensebot
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/dataforseo
+
+User-agent: DataForSEO
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/dataforseo-bot
+
+User-agent: DataForSEO Bot
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/dataforseobot
+
+User-agent: DataForSeoBot
+Disallow: /
+
+# Scraper
+# https://darkvisitors.com/agents/dataprovider-com
+
+User-agent: Dataprovider.com
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/datenbank-crawler
+
+User-agent: Datenbank Crawler
+Disallow: /
+
+# Scraper
+# https://darkvisitors.com/agents/dcrawl
+
+User-agent: dcrawl
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/deepcrawl
+
+User-agent: deepcrawl
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/deepcrawl-com
+
+User-agent: deepcrawl.com
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/diffbot
+
+User-agent: Diffbot
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/domainstatsbot
+
+User-agent: DomainStatsBot
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/dotbot
+
+User-agent: DotBot
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/dragonbot
+
+User-agent: Dragonbot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/ds9
+
+User-agent: ds9
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/dvbot
+
+User-agent: DVbot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/echobot-bot
+
+User-agent: Echobot Bot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/ecovadissustainabilitybot
+
+User-agent: EcoVadisSustainabilityBot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/epivozcrawler
+
+User-agent: EpivozCrawler
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/ev-crawler
+
+User-agent: ev-crawler
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/ezlynx
+
+User-agent: EzLynx
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/ezoicbot
+
+User-agent: EzoicBot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/ezoicbot-nicheiq
+
+User-agent: EzoicBot-Nicheiq
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/facebookbot
+
+User-agent: FacebookBot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/factset-spyderbot
+
+User-agent: factset_spyderbot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/fdl-stats-bot
+
+User-agent: FDL Stats Bot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/fedicabot
+
+User-agent: Fedicabot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/google-adsbot
+
+User-agent: Google AdsBot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/google-adsense
+
+User-agent: Google AdSense
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/google-digital-asset-links
+
+User-agent: Google Digital Asset Links
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/google-storebot
+
+User-agent: Google StoreBot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/google-adwords-instant
+
+User-agent: Google-Adwords-Instant
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/google-display-ads-bot
+
+User-agent: Google-Display-Ads-Bot
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/google-extended
+
+User-agent: Google-Extended
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/google-structured-data-testing
+
+User-agent: Google-Structured-Data-Testing
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/googleother
+
+User-agent: GoogleOther
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/gptbot
+
+User-agent: GPTBot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/grapeshotcrawler
+
+User-agent: GrapeshotCrawler
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/groovinaadsbot
+
+User-agent: GroovinaAdsbot
+Disallow: /
+
+# Scraper
+# https://darkvisitors.com/agents/helloworkjobpostingbot
+
+User-agent: HelloworkJobPostingBot
+Disallow: /
+
+# Scraper
+# https://darkvisitors.com/agents/httrack
+
+User-agent: HTTrack
+Disallow: /
+
+# Scraper
+# https://darkvisitors.com/agents/httrack-3-0
+
+User-agent: HTTrack 3.0
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/hubspot
+
+User-agent: HubSpot
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/huckabot
+
+User-agent: Huckabot
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/huckabuy-bot
+
+User-agent: Huckabuy Bot
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/hypestat
+
+User-agent: hypestat
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/ias-crawler
+
+User-agent: IAS crawler
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/ias-ie
+
+User-agent: ias-ie
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/icc-crawler
+
+User-agent: ICC-Crawler
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/imagesiftbot
+
+User-agent: ImagesiftBot
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/imagespider
+
+User-agent: imageSpider
+Disallow: /
+
+# Scraper
+# https://darkvisitors.com/agents/indeedjobbot
+
+User-agent: IndeedJobBot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/innguma
+
+User-agent: Innguma
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/interactiveadvertisingbureau
+
+User-agent: InteractiveAdvertisingBureau
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/ioncrawl
+
+User-agent: IonCrawl
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/james-bot
+
+User-agent: James BOT
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/jugendschutzprogramm-crawler
+
+User-agent: Jugendschutzprogramm-Crawler
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/kangaroo-bot
+
+User-agent: Kangaroo Bot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/kargobot-artemis-mobile
+
+User-agent: KargoBot-Artemis-Mobile
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/klaviyo
+
+User-agent: Klaviyo
+Disallow: /
+
+# Scraper
+# https://darkvisitors.com/agents/krawlerbot
+
+User-agent: KrawlerBot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/kstandbot
+
+User-agent: KStandBot
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/laion-huggingface-processor
+
+User-agent: laion-huggingface-processor
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/lcc
+
+User-agent: LCC
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/leikibot
+
+User-agent: Leikibot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/lightspeedsystemscrawler
+
+User-agent: LightspeedSystemsCrawler
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/linkcheck-by-siteimprove
+
+User-agent: LinkCheck by Siteimprove
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/linkchecker-bot
+
+User-agent: LinkChecker Bot
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/linkchecker-pro
+
+User-agent: linkchecker.pro
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/linkcheckerbot
+
+User-agent: LinkCheckerBot
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/linkdexbot
+
+User-agent: linkdexbot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/linkfluence
+
+User-agent: linkfluence
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/linksindexerbot
+
+User-agent: LinksIndexerBot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/linkwalker
+
+User-agent: LinkWalker
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/macrobondbot
+
+User-agent: Macrobondbot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/magpie-crawler
+
+User-agent: magpie-crawler
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/marketgoo
+
+User-agent: MarketGoo
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/mbcrawler
+
+User-agent: MBCrawler
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/medialogiabot
+
+User-agent: MedialogiaBot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/mediamonitoringbot
+
+User-agent: MediaMonitoringBot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/mediapartners-google
+
+User-agent: Mediapartners-Google
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/mediatoolkitbot
+
+User-agent: Mediatoolkitbot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/mediavine-medatada-parser
+
+User-agent: Mediavine Medatada Parser
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/mediavinemetadataparser
+
+User-agent: MediavineMetadataParser
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/megaindex-ru
+
+User-agent: MegaIndex.ru
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/meta-externalads
+
+User-agent: meta-externalads
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/meta-externalagent
+
+User-agent: meta-externalagent
+Disallow: /
+
+# Scraper
+# https://darkvisitors.com/agents/metainspector
+
+User-agent: MetaInspector
+Disallow: /
+
+# Scraper
+# https://darkvisitors.com/agents/metajobbot
+
+User-agent: MetaJobBot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/mgidbot
+
+User-agent: MgidBot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/missinglettr-bot
+
+User-agent: Missinglettr Bot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/mixrankbot
+
+User-agent: MixrankBot
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/mj12bot
+
+User-agent: MJ12bot
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/moz-dotbot
+
+User-agent: Moz dotbot
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/moz-rogerbot
+
+User-agent: Moz rogerbot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/muckrack
+
+User-agent: MuckRack
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/nanointeractive
+
+User-agent: NanoInteractive
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/netcraft
+
+User-agent: Netcraft
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/netcraftsurveyagent
+
+User-agent: NetcraftSurveyAgent
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/netestate-imprint-crawler
+
+User-agent: netEstate Imprint Crawler
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/netestate-ne-crawler
+
+User-agent: netEstate NE Crawler
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/neticle-crawler
+
+User-agent: Neticle Crawler
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/netseer-crawler
+
+User-agent: NetSeer crawler
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/netvibes
+
+User-agent: Netvibes
+Disallow: /
+
+# Scraper
+# https://darkvisitors.com/agents/newspaper
+
+User-agent: newspaper
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/nitro
+
+User-agent: Nitro-
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/nitrobot
+
+User-agent: NitroBot
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/noorobot
+
+User-agent: noorobot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/nostocrawlerbot
+
+User-agent: NostoCrawlerBot
+Disallow: /
+
+# Scraper
+# https://darkvisitors.com/agents/nutch
+
+User-agent: Nutch
+Disallow: /
+
+# Scraper
+# https://darkvisitors.com/agents/nyt-scraping
+
+User-agent: nyt_scraping
+Disallow: /
+
+# Scraper
+# https://darkvisitors.com/agents/offline-explorer
+
+User-agent: Offline Explorer
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/omgili
+
+User-agent: omgili
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/oncrawl
+
+User-agent: OnCrawl
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/oncrawl-mobile
+
+User-agent: OnCrawl Mobile
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/online-webceo-bot
+
+User-agent: online-webceo-bot
+Disallow: /
+
+# Scraper
+# https://darkvisitors.com/agents/openindexspider
+
+User-agent: OpenindexSpider
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/outbrain
+
+User-agent: outbrain
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/owler
+
+User-agent: Owler
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/page-preview-tool
+
+User-agent: page-preview-tool
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/pandalytics
+
+User-agent: Pandalytics
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/pangubot
+
+User-agent: PanguBot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/panscient-com
+
+User-agent: panscient.com
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/parse-ly-scraper
+
+User-agent: parse.ly scraper
+Disallow: /
+
+# Scraper
+# https://darkvisitors.com/agents/potions
+
+User-agent: Potions
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/prerender
+
+User-agent: Prerender
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/pro-sitemaps
+
+User-agent: Pro Sitemaps
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/pro-sitemaps-generator
+
+User-agent: Pro Sitemaps Generator
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/productsup-iocrawler
+
+User-agent: productsup.io/crawler
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/proximic
+
+User-agent: proximic
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/quantcastbot
+
+User-agent: Quantcastbot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/qwarrybot
+
+User-agent: Qwarrybot
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/readable
+
+User-agent: Readable
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/retrolistecom
+
+User-agent: RetroListeCOM
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/revvimgort
+
+User-agent: RevvimGort
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/rogerbot-crawler
+
+User-agent: rogerbot-crawler
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/rsiteauditor
+
+User-agent: RSiteAuditor
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/rytebot
+
+User-agent: RyteBot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/salesviewerbot
+
+User-agent: SalesViewerBot
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/sbintuitionsbot
+
+User-agent: SBIntuitionsBot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/scoop-it
+
+User-agent: scoop.it
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/scope3
+
+User-agent: Scope3
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/scrapingnytimes-com
+
+User-agent: scraping@nytimes.com
+Disallow: /
+
+# Scraper
+# https://darkvisitors.com/agents/scrapy
+
+User-agent: Scrapy
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/screaming-frog-seo-spider
+
+User-agent: Screaming Frog SEO Spider
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/searchatlas-bot
+
+User-agent: SearchAtlas Bot
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/sebot-wa
+
+User-agent: SEBot-WA
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/semrushbot
+
+User-agent: SemrushBot
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/semrushbot-ba
+
+User-agent: SemrushBot-BA
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/semrushbot-ct
+
+User-agent: SemrushBot-CT
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/semrushbot-ocob
+
+User-agent: SemrushBot-OCOB
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/semrushbot-sa
+
+User-agent: SemrushBot-SA
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/semrushbot-si
+
+User-agent: SemrushBot-SI
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/semrushbotbacklinks
+
+User-agent: SemrushBotBacklinks
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/sentibot
+
+User-agent: SentiBot
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/senutobot
+
+User-agent: Senutobot
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/seo-audit-check-bot
+
+User-agent: seo-audit-check-bot
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/seo4ajax
+
+User-agent: seo4ajax
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/seo4ajax-com
+
+User-agent: seo4ajax.com
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/seobilitybot
+
+User-agent: SeobilityBot
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/seokicks
+
+User-agent: SEOkicks
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/seolizer
+
+User-agent: SEOlizer
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/serankingbacklinksbot
+
+User-agent: SERankingBacklinksBot
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/serpstatbot
+
+User-agent: serpstatbot
+Disallow: /
+
+# Scraper
+# https://darkvisitors.com/agents/serverhunterspider
+
+User-agent: ServerHunterSpider
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/siteauditbot
+
+User-agent: SiteAuditBot
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/sitebulb
+
+User-agent: Sitebulb
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/sitecheck-sitecrawl
+
+User-agent: SiteCheck-sitecrawl
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/sitecheckerbotcrawler
+
+User-agent: SiteCheckerBotCrawler
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/siteimprove-crawl
+
+User-agent: Siteimprove Crawl
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/slickbot
+
+User-agent: SlickBot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/slickstream
+
+User-agent: slickstream
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/smartologybot
+
+User-agent: SmartologyBot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/smtbot
+
+User-agent: SMTBot
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/spider
+
+User-agent: Spider
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/statistikaustria
+
+User-agent: StatistikAustria
+Disallow: /
+
+# Scraper
+# https://darkvisitors.com/agents/statsdronebot
+
+User-agent: StatsDroneBot
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/statusnestbacklinkspider
+
+User-agent: StatusNestBacklinkSpider
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/storebot-google
+
+User-agent: Storebot-Google
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/taboola
+
+User-agent: Taboola
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/taboolabot
+
+User-agent: Taboolabot
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/timpibot
+
+User-agent: Timpibot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/trendictionbot
+
+User-agent: trendictionbot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/trendsmapresolver
+
+User-agent: TrendsmapResolver
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/ttd-content
+
+User-agent: TTD-Content
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/turnitinbot
+
+User-agent: TurnitinBot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/tweetmemebot
+
+User-agent: TweetmemeBot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/twingly
+
+User-agent: Twingly
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/twingly-recon-sjostrom
+
+User-agent: Twingly Recon-Sjostrom
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/uipbot
+
+User-agent: uipbot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/um-fc
+
+User-agent: um-FC
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/um-ic
+
+User-agent: um-IC
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/um-ln
+
+User-agent: um-LN
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/velenpublicwebcrawler
+
+User-agent: VelenPublicWebCrawler
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/verity
+
+User-agent: Verity
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/virustotal
+
+User-agent: virustotal
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/w3-validator-services
+
+User-agent: W3 Validator Services
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/weborama-fetcher
+
+User-agent: weborama-fetcher
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/webspidermount
+
+User-agent: webspidermount
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/webzio
+
+User-agent: webzio
+Disallow: /
+
+# AI Data Scraper
+# https://darkvisitors.com/agents/webzio-extended
+
+User-agent: webzio-extended
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/wknd-bot
+
+User-agent: wknd-bot
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/woorankreview
+
+User-agent: woorankreview
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/xovionpagecrawler
+
+User-agent: XoviOnpageCrawler
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/yadirectfetcher
+
+User-agent: YaDirectFetcher
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/yahoo-ad-monitoring
+
+User-agent: Yahoo Ad monitoring
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/yahoo-japan
+
+User-agent: Yahoo Japan
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/yak
+
+User-agent: YaK
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/yext-inc
+
+User-agent: Yext Inc
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/yextbot
+
+User-agent: YextBot
+Disallow: /
+
+# SEO Crawler
+# https://darkvisitors.com/agents/zoombot
+
+User-agent: Zoombot
+Disallow: /
+
+# Intelligence Gatherer
+# https://darkvisitors.com/agents/zoominfobot
+
+User-agent: ZoominfoBot
+Disallow: /
