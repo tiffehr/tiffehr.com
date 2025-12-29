@@ -10,7 +10,8 @@ const config = {
     adapter: adapter({
       // Single-page app configuration
       fallback: "index.html"
-    })
+    }),
+    paths: { base: "" }
   }
 };
 
