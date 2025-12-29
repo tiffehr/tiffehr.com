@@ -15,18 +15,17 @@
 
 <article>
   <p>
-    I am a project leader and full-stack newsroom software developer, formerly with The New York Times and msnbc.com (not the cable channel, but close). I now run Gasworks Data L3C, a small low-profit shop that parners with newsrooms, NGOs and other organizations to complete projects that require tech + editorial expertise.
+    I am a project leader and full-stack newsroom software developer, formerly with The New York Times and msnbc.com (not the cable channel, but close). I now run Gasworks Data, a small low-profit shop that parners with newsrooms, NGOs and other organizations to complete projects that require tech + editorial expertise.
   </p>
   <p>
-    My news-nerd work includes custom software & web development, data journalism and occasional reporting & editing. Of course this profile centers the nerdy parts of my job.
+    My news-nerd work includes custom software & web development, data journalism and occasional reporting & editing.
   </p>
   <p>
     Where else I can also be found:
   </p>
-
-  <ul>
+  <ul id="links">
     <li>
-      <Link href="https://gasworksdata.com">My company, Gasworks Data</Link>
+      <Link href="https://gasworksdata.com">Gasworks Data</Link>
     </li>
     <li>
       <NorefLink href="https://github.com/tiffehr">GitHub</NorefLink>

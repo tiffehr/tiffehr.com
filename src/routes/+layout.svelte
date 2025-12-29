@@ -1,9 +1,7 @@
 <script lang="ts">
   import "../app.scss";
   
-  import favicon from "$lib/assets/favicon.svg";
-  import humanMade from "$lib/assets/human-made-badge.webp";
-  
+  import favicon from "$lib/assets/favicon.svg";  
   import "@fontsource/merriweather/300.css";
   import "@fontsource/grand-hotel/400.css";
   import grandHotel from '@fontsource/grand-hotel/files/grand-hotel-latin-400-normal.woff2?url';
@@ -29,10 +27,6 @@
       Howdy! 👋
     </h1>
   </header>
-  <nav>
-    <a href="#main" class="visually-hidden">Skip to main content</a>
-  </nav>
-  <nav id="nav" aria-label="Main navigation"></nav>
   <main id="main" aria-label="Main content">
     <slot />
   </main>
@@ -40,11 +34,8 @@
     <h2 aria-label="Copyright">
       <Link href={root}>tiffehr.com</Link>
       &copy;&nbsp;{year}
-      <Link href="https://thehumanmade.org">human-made</Link> by
       <Link href="https://gasworksdata.com/">Gasworks Data</Link>
-      <img class="human-made" src={humanMade} alt="TheHumanMade badge" width="50" height="50" />
-      <br />
-      All rights reserved
+      all rights reserved
     </h2>
   </footer>
 </div>
