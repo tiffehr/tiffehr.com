@@ -22,10 +22,8 @@
     "test:ui": "vitest --ui"
   },
   "dependencies": {
-    "@fontsource-variable/roboto": "^5.2.6",
-    "@fontsource/lexend": "^5.2.9",
-    "@fontsource/material-symbols-sharp": "^5.2.22",
-    "@fontsource/roboto-slab": "^5.2.6"
+    "@fontsource/grand-hotel": "^5.2.8",
+    "@fontsource/merriweather": "^5.2.11"
   },
   "devDependencies": {
     "@darkvisitors/sdk": "^1.5.0",

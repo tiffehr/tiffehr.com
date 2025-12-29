@@ -2,9 +2,6 @@
   import { PUBLIC_BASE_URL } from "$env/static/public";
   import Link from "$lib/Link.svelte";
   import NorefLink from "$lib/NorefLink.svelte";
-
-  // Your homepage content will go here
-
 </script>
 
 <svelte:head>
@@ -13,7 +10,7 @@
   <meta name="description" content="tiffehr.com - Tiff Fehr's personal website" />
   <meta property="og:description" content="tiffehr.com - Tiff Fehr's personal website" />
   <meta property="og:title" content="tiffehr.com" />
-  <title>from tiffehr.com</title><title>from tiffehr.com</title>
+  <title>from tiffehr.com</title>
 </svelte:head>
 
 <article>
