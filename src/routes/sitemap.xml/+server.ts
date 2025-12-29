@@ -3,7 +3,7 @@ import { PUBLIC_BASE_URL } from "$env/static/public";
 export const prerender = true;
 
 export const GET = async () => {
-  const baseUrl = PUBLIC_BASE_URL || "https://www.tiffehr.com";
+  const baseUrl = PUBLIC_BASE_URL || "https://tiffehr.com";
   const routes = ["/"];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
