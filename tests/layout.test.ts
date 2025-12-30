@@ -7,7 +7,7 @@ describe("Layout Component", () => {
   let component: RenderResult<SvelteComponent<Record<string, any>, any, any>, Queries>;
   let container: HTMLElement;
 
-  beforeAll(() => {
+  beforeEach(() => {
     component = render(Layout as any, {
       props: {
         children: () => { }
@@ -15,6 +15,15 @@ describe("Layout Component", () => {
     });
     container = component.container;
   });
+
+  it("renders a favicon", () => {
+    const icon = document.querySelector("link[rel='icon']");
+    expect(icon).toBeInTheDocument();
+    expect(icon?.hasAttribute('href')).toBeTruthy();
+    expect(icon?.getAttribute('href')).toContain("data:image");
+  });
+
+  it.todo("tests font preloading");
 
   it("renders proper SvelteKit components", () => {
     expect(container).toBeTruthy();
@@ -33,7 +42,15 @@ describe("Layout Component", () => {
   });
 
   it("renders the copyright", () => {
-    const copyright = component.getByRole("heading", { name: "Copyright" });
+    const copyright = component.getByRole("heading", { name: "Copyright" }) as HTMLElement;
     expect(copyright).toBeInTheDocument();
+    const copyrightText = copyright.textContent;
+    expect(copyrightText).toContain("tiffehr.com ©");
+    expect(copyrightText).toContain("all rights");
+  });
+
+  it.skip("renders the brand div", () => {
+    const brand = component.getElementById("brand");
+    expect(brand).toBeInTheDocument();
   });
 });

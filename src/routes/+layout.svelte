@@ -20,7 +20,7 @@
 </svelte:head>
 
 <div class="page-container">
-  <div class="brand"></div>
+  <div id="brand"></div>
   <header aria-label="Site masthead">
     <h1 aria-label="Header">
       Howdy! 👋
