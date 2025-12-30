@@ -21,9 +21,8 @@
 
 <div class="page-container">
   <div class="brand"></div>
-
   <header aria-label="Site masthead">
-    <h1 aria-label="header">
+    <h1 aria-label="Header">
       Howdy! 👋
     </h1>
   </header>
