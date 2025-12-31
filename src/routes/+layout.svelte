@@ -15,6 +15,9 @@
 </script>
 
 <svelte:head>
+  <meta name="author" content="Tiff Fehr" />
+  <meta name="fediverse:creator" content="@tiffehr@journa.host" />
+  <meta property="og:type" content="website" />
   <link rel="icon" href={favicon} />
   <link rel="preload" as="font" type="font/woff2" href={grandHotel} crossorigin="anonymous" />
 </svelte:head>
@@ -32,7 +35,9 @@
   <footer aria-label="Site footer">
     <h2 aria-label="Copyright">
       <Link href={root}>tiffehr.com</Link>
-      &copy;&nbsp;{year}
+      &copy;&nbsp;{year} 
+      <a href="https://thehumanmade.org">human-made</a> by
+      <a rel="me" href="https://journa.host/@tiffehr">me</a> &amp;
       <Link href="https://gasworksdata.com/">Gasworks Data</Link>
       all rights reserved
     </h2>

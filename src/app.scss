@@ -105,9 +105,11 @@ body {
     font-family: var(--type-heds);
     font-size: 120vh;
     font-weight: 200;
-    background: linear-gradient(315deg,
-        var(--brand-gradient-end) 0%,
-        var(--brand-gradient-start) 100%);
+    background: linear-gradient(
+      315deg,
+      var(--brand-gradient-end) 0%,
+      var(--brand-gradient-start) 100%
+    );
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -164,7 +166,7 @@ main {
 
 footer {
   grid-area: footer;
-  margin: var(--space-xl) 0 var(--space-lg) 0;
+  margin: var(--space-sm) 0 var(--space-lg) 0;
   padding: 0 var(--space-xl) 0 0;
   text-align: right;
 

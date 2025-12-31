@@ -14,15 +14,15 @@ export const GET = async () => {
   data-google-analytics-opt-out="true"
 >
   ${routes
-      .map(
-        (route) => `<url>
+    .map(
+      (route) => `<url>
     <loc>${baseUrl}${route}</loc>
     <lastmod>${new Date().toISOString()}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>`
-      )
-      .join("")}
+    )
+    .join("")}
 </urlset>`;
 
   return new Response(sitemap, {
