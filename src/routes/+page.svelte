@@ -40,7 +40,7 @@
       <NorefLink href="https://muckrack.com/tiffehr">MuckRack</NorefLink>
     </li>
     <li>
-      <NorefLink href="https://mastodon.social/@tiffehr">Mastodon (mostly quiet)</NorefLink>
+      <a rel="me" href="https://journa.host/@tiffehr">Mastodon<br />(mostly quiet)</a>
     </li>
   </ul>
 </article>
