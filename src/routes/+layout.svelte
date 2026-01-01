@@ -52,7 +52,8 @@
       <a href="https://thehumanmade.org">human-made</a> by
       <a rel="me" href="https://journa.host/@tiffehr">me</a> &amp;
       <Link href="https://gasworksdata.com/">Gasworks Data</Link>
-      all rights reserved
+      all rights reserved 
+      <a rel="me" class="visually-hidden" href="https://journa.host/@tiffehr">Mastodon</a>
     </h2>
   </footer>
   {@html ldJson}
