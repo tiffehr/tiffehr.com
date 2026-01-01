@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeEach } from "vitest";
 import { GET } from "../src/routes/sitemap.xml/+server";
 
-describe("robots.txt Server Endpoint", () => {
+describe("robots.txt generation", () => {
   let response: Response;
   let content: string;
 
@@ -30,8 +30,33 @@ describe("robots.txt Server Endpoint", () => {
   });
 
   describe("Content Structure", () => {
+
     it("includes the site URL", () => {
       expect(content).toContain("https://tiffehr.com/");
+    });
+
+    it("uses fallback URL when PUBLIC_BASE_URL is not set", async () => {
+      // Temporarily override the mock to test the fallback behavior
+      const { vi } = await import("vitest");
+
+      // Mock with undefined PUBLIC_BASE_URL
+      vi.doMock("$env/static/public", () => ({
+        PUBLIC_BASE_URL: "",  // Empty string to trigger the fallback
+        PUBLIC_TITLE: "Tiff Fehr"
+      }));
+
+      // Clear the module cache and re-import
+      vi.resetModules();
+      const { GET: getFallback } = await import("../src/routes/sitemap.xml/+server");
+      const fallbackResponse = await getFallback();
+      const fallbackContent = await fallbackResponse.text();
+
+      // Should use the fallback URL
+      expect(fallbackContent).toContain("https://tiffehr.com/");
+
+      // Clean up
+      vi.doUnmock("$env/static/public");
+      vi.resetModules();
     });
 
     it("includes <urlset> tag", () => {

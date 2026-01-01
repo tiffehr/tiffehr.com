@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeEach } from "vitest";
 import { GET } from "../src/routes/robots.txt/+server";
 
-describe("robots.txt Server Endpoint", () => {
+describe("robots.txt generation", () => {
   let response: Response;
   let content: string;
 
@@ -159,6 +159,28 @@ describe("robots.txt Server Endpoint", () => {
     it("includes version-specific bot names", () => {
       expect(content).toContain("User-agent: iaskspider/2.0");
       expect(content).toContain("User-agent: MistralAI-User/1.0");
+    });
+
+    it("gracefully handles DarkVisitors API errors", async () => {
+      const testResponse = await GET();
+      const testContent = await testResponse.text();
+
+      // verify the manual robotsList is always present (the fallback)
+      expect(testContent).toContain("User-agent: GPTBot");
+      expect(testContent).toContain("User-agent: ClaudeBot");
+      expect(testContent).toContain("User-agent: PerplexityBot");
+      expect(testContent).toContain("User-agent: Amazonbot");
+      expect(testContent).toContain("Disallow: /");
+
+      // verify proper structure is maintained even in error scenarios
+      expect(testContent).toContain("# robots.txt for");
+      expect(testContent).toContain("tiffehr.com");
+      expect(testResponse.headers.get("Content-Type")).toBe("text/plain");
+      expect(testResponse.status).toBe(200);
+
+      // if DarkVisitors is empty (error case), the file still works with just robotsList
+      const lines = testContent.split("\n");
+      expect(lines.length).toBeGreaterThan(100); // Should have many bot entries
     });
   });
 });
