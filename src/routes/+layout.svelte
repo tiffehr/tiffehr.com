@@ -56,9 +56,5 @@
   </footer>
   <!-- eslint-disable-next-line svelte/no-at-html-tags -->
   {@html ldJson}
-  <script
-    defer
-    src="https://darkvisitors.com/tracker.js?project_key=e7b36ef2-e9c5-4c6e-b788-b0694015d64a"
-    async
-  ></script>
+  <script src="https://darkvisitors.com/tracker.js?project_key=e74faddb-cb4f-4823-a30d-2aeb7028dcdc" async></script>
 </div>

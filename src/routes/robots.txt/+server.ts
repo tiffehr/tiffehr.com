@@ -5,7 +5,7 @@ export const prerender = true;
 
 // https://github.com/ai-robots-txt/ai.robots.tx
 // https://darkvisitors.com/docs/robots-txt
-const darkVisitors = new DarkVisitors("2ef5d16a-e852-4cbf-8cac-0d9bcdcafa42");
+const darkVisitors = new DarkVisitors("d8a5881c-c858-4c4d-9fb6-9132feb00cd2");
 
 let robotsTxt = "";
 try {
