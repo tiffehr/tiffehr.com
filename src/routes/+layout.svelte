@@ -10,12 +10,12 @@
   
   import { resolve } from "$app/paths";
   import Link from "$lib/Link.svelte";
-  import { PUBLIC_BASE_URL } from "$env/static/public";
+  import { generateSchemaJSContent } from "$lib/utils";
 
   /* routes and links */
   const root = resolve(`/`);
   const year = new Date().getFullYear();
-  const nowIso = new Date().toISOString();
+  const ldJson = generateSchemaJSContent();
 </script>
 
 <svelte:head>
@@ -54,42 +54,11 @@
       <Link href="https://gasworksdata.com/">Gasworks Data</Link>
       all rights reserved
     </h2>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "ProfilePage",
-        "dateCreated": "2006-08-22T00:00:00-05:00",
-        // "dateModified": nowIso,
-        "name": "Tiff Fehr",
-        "url": "http://tiffehr.com/",
-        "mainEntityOfPage": "http://tiffehr.com/",
-        "email": "info@gasworksdata.com",
-        "mainEntity": {
-          "@type": "Person",
-          "name": "Tiff Fehr",
-          "alternateName": "tiffehr",
-          "identifier": "1",
-          "interactionStatistic": [],
-          "agentInteractionStatistic": {
-            "@type": "InteractionCounter",
-            "interactionType": "https://schema.org/WriteAction",
-            "userInteractionCount": 1
-          },
-          "description": "Tiff Fehr's personal website",
-          "image": "https://assets.journa.host/accounts/avatars/109/384/956/899/791/435/original/ff2b453fcd6537b4.png",
-          "sameAs": [
-            "https://gasworksdata.com/",
-            "https://journa.host/@tiffehr/",
-            "https://linkedin.com/in/tiff-fehr",
-            "https://news-bots.org/"
-          ]
-        }
-      }
-    </script>
-    <script
-      defer
-      src="https://darkvisitors.com/tracker.js?project_key=e7b36ef2-e9c5-4c6e-b788-b0694015d64a"
-      async
-    ></script>
   </footer>
+  {@html ldJson}
+  <script
+    defer
+    src="https://darkvisitors.com/tracker.js?project_key=e7b36ef2-e9c5-4c6e-b788-b0694015d64a"
+    async
+  ></script>
 </div>
