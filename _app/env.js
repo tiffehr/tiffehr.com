@@ -1,1 +1,1 @@
-export const env={"PUBLIC_DV_KEY":"2ef5d16a-e852-4cbf-8cac-0d9bcdcafa42","PUBLIC_BASE_URL":"https://tiffehr.com"}
+export const env={"PUBLIC_BASE_URL":"https://tiffehr.com"}
