@@ -12,11 +12,7 @@ describe("Layout Component", () => {
     container = component.container;
   });
 
-  [
-    "html",
-    "head",
-    "body",
-  ].forEach((tag) => {
+  ["html", "head", "body"].forEach((tag) => {
     it(`renders a <${tag}> tag`, () => {
       const el = document.querySelector(tag);
       expect(el).toBeInTheDocument();
@@ -24,13 +20,12 @@ describe("Layout Component", () => {
   });
 
   describe("<head>", () => {
-
     [
       // "charset",
       "name='viewport'",
       "name='robots'",
       "property='og:type'",
-      "property='og:image'",
+      "property='og:image'"
     ].forEach((name) => {
       it(`renders an expected 'meta[${name}]' tag`, () => {
         const meta = document.querySelector(`meta[${name}]`);
