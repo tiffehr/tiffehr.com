@@ -1,14 +1,10 @@
-import type { Queries, RenderResult } from "@testing-library/svelte/svelte5";
-import type { SvelteComponent } from "svelte";
-
 import { describe, it, expect } from "vitest";
 import { render, screen } from "@testing-library/svelte/svelte5";
 
 import Layout from "../src/routes/+layout.svelte";
 
 describe("Layout Component", () => {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  let component: RenderResult<SvelteComponent<Record<string, any>, any, any>, Queries>;
+  let component: ReturnType<typeof render>;
   let container: HTMLElement;
 
   beforeEach(() => {
