@@ -1,11 +1,11 @@
 import { AgentType, DarkVisitors } from "@darkvisitors/sdk";
-import { PUBLIC_BASE_URL, PUBLIC_DV_KEY } from "$env/static/public";
+import { PUBLIC_BASE_URL } from "$env/static/public";
 
 export const prerender = true;
 
 // https://github.com/ai-robots-txt/ai.robots.tx
 // https://darkvisitors.com/docs/robots-txt
-const darkVisitors = new DarkVisitors(PUBLIC_DV_KEY);
+const darkVisitors = new DarkVisitors("2ef5d16a-e852-4cbf-8cac-0d9bcdcafa42");
 
 let robotsTxt = "";
 try {

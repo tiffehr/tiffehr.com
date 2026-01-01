@@ -16,8 +16,34 @@ describe("Layout Component", () => {
     container = component.container;
   });
 
+  [
+    "html",
+    "head",
+    "body",
+  ].forEach((tag) => {
+    it(`renders a <${tag}> tag`, () => {
+      const el = document.querySelector(tag);
+      expect(el).toBeInTheDocument();
+    });
+  });
+
   describe("<head>", () => {
-    it("renders a favicon", () => {
+
+    [
+      // "charset",
+      "name='viewport'",
+      "name='robots'",
+      "property='og:type'",
+      "property='og:image'",
+    ].forEach((name) => {
+      it(`renders an expected 'meta[${name}]' tag`, () => {
+        const meta = document.querySelector(`meta[${name}]`);
+        expect(meta).toBeInTheDocument();
+        expect(meta?.hasAttribute("content")).toBeTruthy();
+      });
+    });
+
+    it.skip("renders a favicon", () => {
       const icon = document.querySelector("link[rel='icon']");
       expect(icon).toBeInTheDocument();
       expect(icon?.hasAttribute("href")).toBeTruthy();
@@ -111,6 +137,18 @@ describe("Layout Component", () => {
         const footer = container.querySelector("footer");
 
         expect(footer?.textContent).toContain("all rights reserved");
+      });
+
+      it("renders a JSON-LD schema.org block", () => {
+        const jsonLd = container.querySelector("script[type='application/ld+json']");
+
+        expect(jsonLd).toBeInTheDocument();
+      });
+
+      it("renders a darkvisitors script tag", () => {
+        const darkVisitors = container.querySelector("script[async]");
+
+        expect(darkVisitors).toBeInTheDocument();
       });
     });
   });

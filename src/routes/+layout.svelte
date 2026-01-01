@@ -2,24 +2,37 @@
   import "../app.scss";
   
   import favicon from "$lib/assets/favicon.svg";  
+  import faviconIco from "$lib/assets/favicon.ico";
+  import favicon512 from "$lib/assets/favicon-512x512.png";
   import "@fontsource/merriweather/300.css";
   import "@fontsource/grand-hotel/400.css";
   import grandHotel from '@fontsource/grand-hotel/files/grand-hotel-latin-400-normal.woff2?url';
   
   import { resolve } from "$app/paths";
   import Link from "$lib/Link.svelte";
+  import { PUBLIC_BASE_URL } from "$env/static/public";
 
   /* routes and links */
   const root = resolve(`/`);
   const year = new Date().getFullYear();
+  const nowIso = new Date().toISOString();
 </script>
 
 <svelte:head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noarchive, max-image-preview:small" />
+  <meta name="referrer" content="no-referrer-when-downgrade" />
   <meta name="author" content="Tiff Fehr" />
   <meta name="fediverse:creator" content="@tiffehr@journa.host" />
   <meta property="og:type" content="website" />
-  <link rel="icon" href={favicon} />
+  <meta property="og:image" content={favicon512} />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
   <link rel="preload" as="font" type="font/woff2" href={grandHotel} crossorigin="anonymous" />
+  <!-- favicons -->
+  <link rel="icon" href={favicon} type="image/svg+xml" />
+  <link rel="icon" href={faviconIco} sizes="any" />
 </svelte:head>
 
 <div class="page-container">
@@ -41,5 +54,42 @@
       <Link href="https://gasworksdata.com/">Gasworks Data</Link>
       all rights reserved
     </h2>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "dateCreated": "2006-08-22T00:00:00-05:00",
+        // "dateModified": nowIso,
+        "name": "Tiff Fehr",
+        "url": "http://tiffehr.com/",
+        "mainEntityOfPage": "http://tiffehr.com/",
+        "email": "info@gasworksdata.com",
+        "mainEntity": {
+          "@type": "Person",
+          "name": "Tiff Fehr",
+          "alternateName": "tiffehr",
+          "identifier": "1",
+          "interactionStatistic": [],
+          "agentInteractionStatistic": {
+            "@type": "InteractionCounter",
+            "interactionType": "https://schema.org/WriteAction",
+            "userInteractionCount": 1
+          },
+          "description": "Tiff Fehr's personal website",
+          "image": "https://assets.journa.host/accounts/avatars/109/384/956/899/791/435/original/ff2b453fcd6537b4.png",
+          "sameAs": [
+            "https://gasworksdata.com/",
+            "https://journa.host/@tiffehr/",
+            "https://linkedin.com/in/tiff-fehr",
+            "https://news-bots.org/"
+          ]
+        }
+      }
+    </script>
+    <script
+      defer
+      src="https://darkvisitors.com/tracker.js?project_key=e7b36ef2-e9c5-4c6e-b788-b0694015d64a"
+      async
+    ></script>
   </footer>
 </div>
