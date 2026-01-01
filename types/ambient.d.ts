@@ -8,5 +8,5 @@ declare module "$env/static/public" {
   /**
    * Public env vars used within Vite preprocessing plugins
    */
-  export const VITE_DV_KEY: string;
+  // export const VITE_DV_KEY: string;
 }

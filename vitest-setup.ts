@@ -17,7 +17,6 @@ vi.mock("$app/navigation", () => ({
 vi.mock("$env/static/public", () => ({
   PUBLIC_BASE_URL: "https://tiffehr.com",
   PUBLIC_TITLE: "Tiff Fehr",
-  PUBLIC_TAGLINE: "Personal website"
 }));
 
 // Cleanup after each test
