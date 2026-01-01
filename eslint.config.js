@@ -28,7 +28,9 @@ export default ts.config(
       // dynamic each blocks. I.e. we don't typically expect elements in
       // #each to be added/deleted/reordered). If your each block does
       // have these characteristics, you definitely *should* add a key!
-      "svelte/require-each-key": "off"
+      "svelte/require-each-key": "off",
+      // Enforce 2-space indentation
+      indent: ["error", 2, { SwitchCase: 1 }]
     }
   },
   {

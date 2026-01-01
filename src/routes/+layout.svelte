@@ -1,13 +1,13 @@
 <script lang="ts">
   import "../app.scss";
-  
-  import favicon from "$lib/assets/favicon.svg";  
+
+  import favicon from "$lib/assets/favicon.svg";
   import faviconIco from "$lib/assets/favicon.ico";
   import favicon512 from "$lib/assets/favicon-512x512.png";
   import "@fontsource/merriweather/300.css";
   import "@fontsource/grand-hotel/400.css";
-  import grandHotel from '@fontsource/grand-hotel/files/grand-hotel-latin-400-normal.woff2?url';
-  
+  import grandHotel from "@fontsource/grand-hotel/files/grand-hotel-latin-400-normal.woff2?url";
+
   import { resolve } from "$app/paths";
   import Link from "$lib/Link.svelte";
   import { generateSchemaJSContent } from "$lib/utils";
@@ -38,9 +38,7 @@
 <div class="page-container">
   <div id="brand"></div>
   <header aria-label="Site masthead">
-    <h1 aria-label="Header">
-      Howdy! 👋
-    </h1>
+    <h1 aria-label="Header">Howdy! 👋</h1>
   </header>
   <main id="main" aria-label="Main content">
     <slot />
@@ -48,14 +46,15 @@
   <footer aria-label="Site footer">
     <h2 aria-label="Copyright">
       <Link href={root}>tiffehr.com</Link>
-      &copy;&nbsp;{year} 
+      &copy;&nbsp;{year}
       <a href="https://thehumanmade.org">human-made</a> by
       <a rel="me" href="https://journa.host/@tiffehr">me</a> &amp;
       <Link href="https://gasworksdata.com/">Gasworks Data</Link>
-      all rights reserved 
+      all rights reserved
       <a rel="me" class="visually-hidden" href="https://journa.host/@tiffehr">Mastodon</a>
     </h2>
   </footer>
+  <!-- eslint-disable-next-line svelte/no-at-html-tags -->
   {@html ldJson}
   <script
     defer
