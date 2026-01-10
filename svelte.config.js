@@ -8,6 +8,8 @@ const config = {
   preprocess: vitePreprocess(),
   kit: {
     adapter: adapter({
+      precompress: true,
+      strict: true,
       // Single-page app configuration
       fallback: "index.html"
     }),
