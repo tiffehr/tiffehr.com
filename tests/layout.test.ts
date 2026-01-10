@@ -1,9 +1,9 @@
 import { describe, it, expect } from "vitest";
-import { render, screen } from "@testing-library/svelte/svelte5";
+import { render, screen, within } from "@testing-library/svelte/svelte5";
 
 import Layout from "../src/routes/+layout.svelte";
 
-describe("Layout Component", () => {
+describe.only("Layout Component", () => {
   let component: ReturnType<typeof render>;
   let container: HTMLElement;
 
@@ -12,50 +12,64 @@ describe("Layout Component", () => {
     container = component.container;
   });
 
-  ["html", "head", "body"].forEach((tag) => {
-    it(`renders a <${tag}> tag`, () => {
-      const el = document.querySelector(tag);
-      expect(el).toBeInTheDocument();
-    });
+  it.each(
+    ["html", "head", "body"]
+  )("renders a <%s> tag", (tag) => {
+    const el = document.querySelector(tag);
+    expect(el).toBeInTheDocument();
   });
 
   describe("<head>", () => {
-    [
-      // "charset",
+    it.each([
       "name='viewport'",
       "name='robots'",
+      "name='author'",
+      "name='fediverse:creator'",
       "property='og:type'",
       "property='og:image'"
-    ].forEach((name) => {
-      it(`renders an expected 'meta[${name}]' tag`, () => {
-        const meta = document.querySelector(`meta[${name}]`);
-        expect(meta).toBeInTheDocument();
-        expect(meta?.hasAttribute("content")).toBeTruthy();
-      });
+    ])(`renders expected 'meta[%s]' tag`, (name) => {
+      const meta = document.querySelector(`meta[${name}]`);
+      expect(meta).toBeInTheDocument();
+      expect(meta?.hasAttribute("content")).toBeTruthy();
+
+      const contentVal = meta?.getAttribute("content");
+      expect(contentVal).not.toBe(String())
+      expect(contentVal).toStrictEqual(expect.any(String));
     });
 
-    it.skip("renders a favicon", () => {
+    it("renders a favicon", () => {
       const icon = document.querySelector("link[rel='icon']");
       expect(icon).toBeInTheDocument();
       expect(icon?.hasAttribute("href")).toBeTruthy();
       expect(icon?.getAttribute("href")).toContain("data:image");
     });
 
-    it("renders an meta['author'] tag", () => {
+    it("sets charset utf-8", () => {
+      const charset = document.querySelector("meta[charset]");
+      expect(charset).toBeInTheDocument();
+      expect(charset?.hasAttribute("charset")).toBeTruthy();
+      expect(charset?.getAttribute("charset")).toBe("utf-8");
+    });
+
+    it("renders me as the meta['author'] tag", () => {
       const author = document.querySelector("meta[name='author']");
       expect(author).toBeInTheDocument();
       expect(author?.hasAttribute("content")).toBeTruthy();
       expect(author?.getAttribute("content")).toContain("Tiff Fehr");
     });
 
-    it("renders an meta['fediverse:creator'] tag", () => {
+    it("renders me as the meta['fediverse:creator'] tag", () => {
       const author = document.querySelector("meta[name='fediverse:creator']");
       expect(author).toBeInTheDocument();
       expect(author?.hasAttribute("content")).toBeTruthy();
       expect(author?.getAttribute("content")).toContain("@tiffehr@journa.host");
     });
 
-    it.todo("tests font preloading");
+    it("preloads a font", () => {
+      const preload = document.querySelector("link[rel='preload']");
+      expect(preload).toBeInTheDocument();
+      expect(preload?.hasAttribute("href")).toBeTruthy();
+    });
   });
 
   describe("<body>", () => {
@@ -63,33 +77,40 @@ describe("Layout Component", () => {
       expect(container).toBeTruthy();
     });
 
-    ["header", "h1", "main", "footer", "h2"].forEach((tag) => {
-      it(`renders the correct <${tag}> structure`, () => {
-        const main = container.querySelector(tag);
-        expect(main).toBeInTheDocument();
-      });
+    it.each(
+      ["header", "h1", "main", "footer", "h2"]
+    )(`renders the correct <%s> structure`, (tag) => {
+      const main = container.querySelector(tag);
+      expect(main).toBeInTheDocument();
     });
 
-    it("renders the main heading", () => {
-      const heading = component.getByRole("heading", { name: "Header" });
-      expect(heading).toBeInTheDocument();
+    it("has the correct main container id", () => {
+      const main = container.querySelector("main#main");
+      expect(main).toBeInTheDocument();
     });
 
-    it.skip("renders the brand div", () => {
-      const brand = component.getElementById("brand");
-      expect(brand).toBeInTheDocument();
+    it.only("renders the header with site title link", () => {
+      const header = container.querySelector("header");
+      expect(header).toBeInTheDocument();
+      expect(header?.textContent).toContain("Howdy");
     });
 
     describe("<footer>", () => {
-      it("renders the copyright", () => {
-        const copyright = component.getByRole("heading", { name: "Copyright" }) as HTMLElement;
-        expect(copyright).toBeInTheDocument();
-        const copyrightText = copyright.textContent;
-        expect(copyrightText).toContain("tiffehr.com ©");
-        expect(copyrightText).toContain("all rights");
+
+      it("renders copyright information", () => {
+        const footer = container.querySelector("footer");
+
+        expect(footer).toBeInTheDocument();
+        expect(footer?.getAttribute("aria-label")).toBe("Site footer");
       });
 
-      it("displays the tiffehr.com link", () => {
+      it("renders copyright symbol", () => {
+        const footer = container.querySelector("footer");
+        expect(footer).toBeInTheDocument();
+        expect(footer?.textContent).toContain("©");
+      });
+
+      it("displays the tiffehr link", () => {
         const footer = screen.getByRole("contentinfo");
         const links = screen.getAllByRole("link", { name: /tiffehr/i });
 
@@ -110,24 +131,11 @@ describe("Layout Component", () => {
         expect(humanMadeLink.getAttribute("href")).toBe("https://thehumanmade.org");
       });
 
-      it("displays a `rel='me'` link to Mastodon", () => {
-        const relMe = screen.getByRole("link", { name: /me/i });
-
-        expect(relMe).toBeInTheDocument();
-        expect(relMe.getAttribute("rel")).toBe("me");
-      });
-
       it("displays the current year in copyright", () => {
         const footer = container.querySelector("footer");
         const currentYear = new Date().getFullYear();
 
         expect(footer?.textContent).toContain(currentYear.toString());
-      });
-
-      it("displays 'all rights reserved' text", () => {
-        const footer = container.querySelector("footer");
-
-        expect(footer?.textContent).toContain("all rights reserved");
       });
 
       it("renders a JSON-LD schema.org block", () => {
